@@ -1,15 +1,15 @@
 #TASK Level variables
-- name: variables from Task Level
+- name: variables from Paly Level
   hosts: localhost
   vars:
     Course: "DevOps"
     Trainer: "Sivakumar"
     Duration: "110HRS"
   tasks:
-    -name: task level variables
-    vars:
-      Course: "DevOps with AWS"
-      Trainer: "SivaKumar"
-      Duration: "110HRS"
-    ansible.builtin.debug:
-      msg: "Hi, I'm learning {{Course}}, Trainer is {{Trainer}} and Duration is {{Duration}}"
+    - name: check variables
+      vars:
+        Course: "DevOps with AWS"
+        Trainer: "SivaKumar"
+        Duration: "110HRS"
+      ansible.builtin.debug:
+        msg: "Hi, I'm learning {{Course}}, Trainer is {{Trainer}} and Duration is {{Duration}}"

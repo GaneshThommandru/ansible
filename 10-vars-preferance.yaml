@@ -1,24 +1,25 @@
 - name: Variable preferances
   hosts: localhost
-#  vars_files:
-#  - variables.yaml
-  # vars_prompt:
-  # - name: PERSON
-  #   prompt: Enter Person Name
-  #   private: false
-  # - name: WISHES
-  #   prompt: Enter wishes 
-  #   private: false
-  # vars:
-  #   PERSON: "Siva from Play level"
-  #   WISHES: "Morning from Play level"
+  vars_files:
+  - variables.yaml
+  vars_prompt:
+  - name: PERSON
+    prompt: Enter Person Name
+    private: false
+  - name: WISHES
+    prompt: Enter wishes 
+    private: false
+  vars:
+    PERSON: "Siva from Play level"
+    WISHES: "Morning from Play level"
   tasks:
   - name: Variables in Task level
-#    vars:
-#      PERSON: "Siva from task level"
-#      WISHES: "Afternoon from task level"
+    vars:
+      PERSON: "Siva from task level"
+      WISHES: "Afternoon from task level"
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, Good {{WISHES}}"
+
 
 #Preferance
 #1.CMD
@@ -26,4 +27,4 @@
 #3.File level
 #4.Prompt Level
 #5.Play Level
-#6.
+#6.Inventory level

@@ -1,7 +1,7 @@
 - name: Variable preferances
   hosts: localhost
-  vars_files:
-  - variables.yaml
+#  vars_files:
+#  - variables.yaml
   vars_prompt:
   - name: PERSON
     prompt: Enter Person Name
@@ -23,3 +23,4 @@
 #Preferance
 #1.CMD
 #2.Task Level
+#3.File level

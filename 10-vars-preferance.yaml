@@ -1,0 +1,21 @@
+- name: Variable preferances
+  hosts: localhost
+  vars_files:
+  - variables.yaml
+  vars_prompt:
+  - name: PERSON
+    prompt: Enter Person Name
+    private: false
+  - name: WISHES
+    prompt: Enter wishes 
+    private: false
+  vars:
+    PERSON: "Siva from Play level"
+    WISHES: "Morning from Play level"
+  tasks:
+  - name: Variables in Task level
+    vars:
+      PERSON: "Siva from task level"
+      WISHES: "Afternoon from task level"
+    ansible.builtin.debug:
+      msg: "Hello {{PERSON}}, Good {{WISHES}}"

@@ -8,7 +8,7 @@
   tasks:
     -name: task level variables
     vars:
-      Course: "DevOps"
+      Course: "DevOps with AWS"
       Trainer: "SivaKumar"
       Duration: "110HRS"
     ansible.builtin.debug:

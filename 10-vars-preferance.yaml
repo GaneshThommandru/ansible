@@ -9,9 +9,9 @@
   # - name: WISHES
   #   prompt: Enter wishes 
   #   private: false
-  vars:
-    PERSON: "Siva from Play level"
-    WISHES: "Morning from Play level"
+  # vars:
+  #   PERSON: "Siva from Play level"
+  #   WISHES: "Morning from Play level"
   tasks:
   - name: Variables in Task level
 #    vars:
@@ -25,4 +25,5 @@
 #2.Task Level
 #3.File level
 #4.Prompt Level
-#
+#5.Play Level
+#6.

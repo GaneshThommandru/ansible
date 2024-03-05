@@ -1,9 +1,13 @@
 #TASK Level variables
 - name: variables from Task Level
   hosts: localhost
+  vars:
+    Course: "DevOps"
+    Trainer: "Sivakumar"
+    Duration: "110HRS"
   tasks:
     -name: task level variables
-    var:
+    vars:
       Course: "DevOps"
       Trainer: "SivaKumar"
       Duration: "110HRS"

@@ -14,8 +14,12 @@
     WISHES: "Morning from Play level"
   tasks:
   - name: Variables in Task level
-    vars:
-      PERSON: "Siva from task level"
-      WISHES: "Afternoon from task level"
+#    vars:
+#      PERSON: "Siva from task level"
+#      WISHES: "Afternoon from task level"
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, Good {{WISHES}}"
+
+#Preferance
+#1.CMD
+#2.Task Level

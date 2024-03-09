@@ -1,4 +1,4 @@
-- name: Loops
+- name: loops
   hosts: localhost
   become: yes
   tasks:

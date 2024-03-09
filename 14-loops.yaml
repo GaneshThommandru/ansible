@@ -1,6 +1,6 @@
 - name: installing packages by using loops
   hosts: localhost
-  become: true
+  become: yes
   tasks:
   - name: install packages
     ansible.builtin.package:

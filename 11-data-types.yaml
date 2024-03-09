@@ -16,12 +16,12 @@
   - name: Print Key Value pair
     ansible.builtin.debug:
       msg: "Name:{{NAME}}"
-  - name: Print Skills
+  - name: Print Lists
     ansible.builtin.debug:
       msg: "Skills:{{Skills}}"
-  - name: Print Experience
+  - name: Print map
     ansible.builtin.debug:
       msg: "Experience:{{Experience}}"
-  - name: Print Key Value pair
+  - name: Print boolean
     ansible.builtin.debug:
       msg: "Is he Trainer? :{{Trainer}}"  
